@@ -50,7 +50,7 @@ https://github.com/Maryery/wallaclone/backend npm install
 ```
 
 ```sh
-https://github.com/Maryery/wallaclone/frontend  npm install yarn
+https://github.com/Maryery/wallaclone/wallaclone-frontend  npm install yarn
 
 ```
 
