@@ -11,7 +11,6 @@ class Register extends Component {
 			password: '',
 			isregistered: false,
 		};
-		this.submitForm = this.submitForm.bind(this);
 	}
 
 	handleName = (e) => {

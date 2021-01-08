@@ -14,9 +14,6 @@ class App extends Component {
 		this.state = {
 			user: null,
 		};
-		this.apiLogin = this.apiLogin.bind(this);
-		this.apiRegister = this.apiRegister.bind(this);
-		this.logout = this.logout.bind(this);
 	}
 
 	componentDidMount() {}

@@ -16,12 +16,6 @@ class CreateAd extends Component {
 			image: '',
 			id: '',
 		};
-		this.submitForm = this.submitForm.bind(this);
-		this.handleName = this.handleName.bind(this);
-		this.handleType = this.handleType.bind(this);
-		this.handlePrice = this.handlePrice.bind(this);
-		this.handleDescription = this.handleDescription.bind(this);
-		this.handleTag = this.handleTag.bind(this);
 	}
 
 	handleName = (e) => {

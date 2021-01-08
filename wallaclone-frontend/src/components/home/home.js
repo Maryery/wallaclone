@@ -14,10 +14,6 @@ class Home extends Component {
 			sortPrice: 0,
 			nameFilter: '',
 		};
-		this.callApi = this.callApi.bind(this);
-		this.handleTagsChange = this.handleTagsChange.bind(this);
-		this.handleSortChange = this.handleSortChange.bind(this);
-		this.handleNameChange = this.handleNameChange.bind(this);
 	}
 
 	handleTagsChange = (e, data) => {

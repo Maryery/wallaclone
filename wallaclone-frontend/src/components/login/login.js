@@ -10,7 +10,6 @@ class Login extends Component {
 			password: '',
 			islogged: false,
 		};
-		this.submitForm = this.submitForm.bind(this);
 	}
 
 	handleEmail = (e) => {
