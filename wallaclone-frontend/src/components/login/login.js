@@ -1,16 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Button, Form, Card } from 'semantic-ui-react';
 import { Route, Redirect } from 'react-router-dom';
 
-class Login extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			email: '',
-			password: '',
-			islogged: false,
-		};
-	}
+class Login extends React.Component {
+	state = {
+		email: '',
+		password: '',
+		islogged: false,
+	};
 
 	handleEmail = (e) => {
 		this.setState({

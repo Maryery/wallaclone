@@ -1,20 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import AdList from '../adList/adList';
 import Filters from '../filters/filters';
 import Paginator from '../paginator/paginator';
 
 const ENDPOINT = 'http://localhost:4000/apiv1/ads';
 
-class Home extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			ads: [],
-			tagFilter: '',
-			sortPrice: 0,
-			nameFilter: '',
-		};
-	}
+class Home extends React.Component {
+	state = {
+		ads: [],
+		tagFilter: '',
+		sortPrice: 0,
+		nameFilter: '',
+	};
 
 	handleTagsChange = (e, data) => {
 		this.setState({

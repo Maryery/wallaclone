@@ -1,17 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Button, Form, Card } from 'semantic-ui-react';
 import { Route, Redirect } from 'react-router-dom';
 
-class Register extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			name: '',
-			email: '',
-			password: '',
-			isregistered: false,
-		};
-	}
+class Register extends React.Component {
+	state = {
+		name: '',
+		email: '',
+		password: '',
+		isregistered: false,
+	};
 
 	handleName = (e) => {
 		this.setState({

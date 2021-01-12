@@ -1,13 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Card, Image } from 'semantic-ui-react';
 
-class DetailAD extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			ad: '',
-		};
-	}
+class DetailAD extends React.Component {
+	state = {
+		ad: '',
+	};
 
 	componentDidMount = async (event) => {
 		console.log(this.props);

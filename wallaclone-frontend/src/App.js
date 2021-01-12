@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/home/home';
 import Login from './components/login/login';
@@ -8,13 +8,10 @@ import DetailAd from './components/detailAd/detailAd';
 import Header from './components/header/header';
 import Profile from './components/profile/profile';
 
-class App extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			user: null,
-		};
-	}
+class App extends React.Component {
+	state = {
+		user: null,
+	};
 
 	componentDidMount() {}
 

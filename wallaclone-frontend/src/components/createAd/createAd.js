@@ -1,22 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Button, Form, Container, Grid, Segment } from 'semantic-ui-react';
 import { Route, Redirect } from 'react-router-dom';
 
 const ENDPOINT = 'http://localhost:4000/apiv1/ads';
 
-class CreateAd extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			name: '',
-			type: '',
-			price: '',
-			description: '',
-			tag: '',
-			image: '',
-			id: '',
-		};
-	}
+class CreateAd extends React.Component {
+	state = {
+		name: '',
+		type: '',
+		price: '',
+		description: '',
+		tag: '',
+		image: '',
+		id: '',
+	};
 
 	handleName = (e) => {
 		this.setState({
